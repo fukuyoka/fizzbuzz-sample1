@@ -2,11 +2,9 @@ name: Continuous Integration
 on: push
 
 jobs:
-  always-success:
   unit-test:
     name: Unit Test
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
       - name: Checkout
         uses: actions/checkout@v2.0.0
